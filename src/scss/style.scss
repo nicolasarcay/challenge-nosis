@@ -1,0 +1,38 @@
+$theme-colors: (
+  "primary": #ff2d00,
+  "dark": #353535,
+  "light": #eeeeee,
+  "success": #28a00b,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.card__movie {
+  @media (min-width: 768px) {
+    flex: 0 0 auto;
+    width: 19%;
+    border: none;
+    border-radius: 0;
+  }
+  &-img {
+    border-radius: 5px;
+    @media (min-width: 768px) {
+      max-height: 178px;
+      min-height: 178px;
+    }
+    @media (min-width: 1200px) {
+      max-height: 350px;
+      min-height: 350px;
+    }
+  }
+}
+.add__movie-button {
+  width: 100%;
+  @media (min-width: 768px) {
+    display: flex;
+    width: 42px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+  }
+}
