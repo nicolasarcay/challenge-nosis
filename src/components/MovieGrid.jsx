@@ -6,13 +6,14 @@ import { ErrorApi } from "./ErrorApi";
 import { ErrorSearch } from "./ErrorSearch";
 
 export const MovieGrid = ({ titleMovie }) => {
+  
   const { films, isLoading, hasError } = useFetchMovies(titleMovie);
 
   if (hasError) return <ErrorApi hasError={hasError} />;
 
   return (
     <>
-      {films.length == 0 ? (
+      {films.length == 0 && !isLoading ? (
         <ErrorSearch />
       ) : (
         <Row className="justify-content-between py-4">

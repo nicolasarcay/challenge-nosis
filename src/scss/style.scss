@@ -1,9 +1,15 @@
+$primary: #ff2d00;
+$dark: #353535;
+$light: #eeeeee;
+$success: #28a00b;
+
 $theme-colors: (
   "primary": #ff2d00,
   "dark": #353535,
   "light": #eeeeee,
   "success": #28a00b,
 );
+
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -19,10 +25,21 @@ $theme-colors: (
     @media (min-width: 768px) {
       max-height: 178px;
       min-height: 178px;
+      min-width: 120px;
+      max-height: 120px;
     }
     @media (min-width: 1200px) {
       max-height: 350px;
       min-height: 350px;
+      min-width: 240px;
+      max-height: 240px;
+    }
+  }
+  &__link{
+    color: $dark;
+    text-decoration: none;
+    &:hover{
+      color: $primary;
     }
   }
 }

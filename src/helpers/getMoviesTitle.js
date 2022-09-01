@@ -16,9 +16,8 @@ export const getMoviesTitle = async (titleMovie) => {
         type: film.Type,
         year: film.Year,
       }));
-    }{
+    }else{
         response.hasError = Error
-        console.log(response.hasError)
     }
 
   } catch (error) {

@@ -1,5 +1,5 @@
 export const ErrorSearch = () => {
   return (
-    <div>ErrorSearch</div>
+    <div>Error---------Search</div>
   )
 }

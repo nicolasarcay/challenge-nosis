@@ -8,7 +8,7 @@ export const useFetchMovies = (titleMovie) => {
     hasError: false,
   });
 
-  const getMovie = async () => {
+  const getMovies = async () => {
     setMovie({
       ...movie,
       isLoading: true,
@@ -24,7 +24,7 @@ export const useFetchMovies = (titleMovie) => {
   };
 
   useEffect(() => {
-    getMovie();
+    getMovies();
   }, []);
 
   return {
