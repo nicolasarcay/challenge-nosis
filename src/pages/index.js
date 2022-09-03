@@ -1,5 +1,3 @@
-export * from './PageAvengers';
-export * from './PageHarry';
 export * from './Home';
-export * from './PageStarWars';
 export * from './Movie';
+export * from './NotFound';

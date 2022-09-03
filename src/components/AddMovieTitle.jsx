@@ -20,8 +20,8 @@ export const AddMovieTitle = ({ onNewMovieTitle }) => {
       }
   return (
     <>
-      <h1 className="pt-4">Busca tu pelicula favorita</h1>
-      <Form className="pt-4" onSubmit={onSubmit}>
+      <h1 className="py-md-5 pb-2 pt-5">Busca tu pelicula favorita</h1>
+      <Form className="pb-4" onSubmit={onSubmit}>
         <Row>
           <Col xs={12} md={11}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

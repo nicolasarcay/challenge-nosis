@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import { Home, PageAvengers, PageHarry, PageStarWars, Movie } from "../pages";
-import { NavbarMain } from "../components/NavbarMain";
+import { Home, Movie, NotFound } from "../pages";
+import { NavbarMain } from "../components";
 
 export const RoutesMain = () => {
   return (
@@ -8,10 +8,8 @@ export const RoutesMain = () => {
       <NavbarMain />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="harry+potter" element={<PageHarry />} />
-        <Route path="avengers" element={<PageAvengers />} />
-        <Route path="star+wars" element={<PageStarWars />} />
         <Route path="movie/:id" element={<Movie />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );

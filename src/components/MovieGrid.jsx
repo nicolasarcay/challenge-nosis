@@ -1,9 +1,8 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-import { useFetchMovies } from "../hooks/useFetchMovies";
-import { CardMovie } from "./CardMovie";
-import { ErrorApi } from "./ErrorApi";
-import { ErrorSearch } from "./ErrorSearch";
+import { useFetchMovies } from "../hooks";
+import {ErrorApi, CardMovie, ErrorSearch, IsLoading} from '../components'
+
 
 export const MovieGrid = ({ titleMovie }) => {
   
@@ -16,9 +15,9 @@ export const MovieGrid = ({ titleMovie }) => {
       {films.length == 0 && !isLoading ? (
         <ErrorSearch />
       ) : (
-        <Row className="justify-content-between py-4">
+        <Row className="justify-content-center py-4">
           {isLoading ? (
-            <div>Estamos cargando</div>
+            <IsLoading />
           ) : (
             <>
               {films.map((film) => (

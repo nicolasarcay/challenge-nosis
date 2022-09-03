@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { MovieDetails } from "../components/MovieDetails";
+import { MovieDetails } from "../components";
 import { useFetchMovie } from "../hooks/useFetchMovie";
 
 export const Movie = () => {

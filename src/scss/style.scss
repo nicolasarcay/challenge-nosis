@@ -1,4 +1,5 @@
-$primary: #ff2d00;
+$primary: hsl(11, 100%, 50%);
+$darkens: #151515;
 $dark: #353535;
 $light: #eeeeee;
 $success: #28a00b;
@@ -10,10 +11,15 @@ $theme-colors: (
   "success": #28a00b,
 );
 
-
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
+body{
+  background-color: $darkens;
+  color: $light
+}
+
 .card__movie {
+  display: flex;
   @media (min-width: 768px) {
     flex: 0 0 auto;
     width: 19%;
@@ -26,18 +32,22 @@ $theme-colors: (
       max-height: 178px;
       min-height: 178px;
       min-width: 120px;
-      max-height: 120px;
+      max-width: 120px;
     }
     @media (min-width: 1200px) {
       max-height: 350px;
       min-height: 350px;
       min-width: 240px;
-      max-height: 240px;
+      max-width: 240px;
     }
   }
   &__link{
-    color: $dark;
+    color: $light;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     &:hover{
       color: $primary;
     }
