@@ -2,7 +2,7 @@ export const getMoviesTitle = async (titleMovie) => {
   const url = `https://www.omdbapi.com/?apikey=89747369&type=movie&s=${titleMovie}`;
   let response = {
     films: [],
-    hasError: false
+    hasError: false,
   };
   try {
     const resp = await fetch(url);
@@ -16,15 +16,14 @@ export const getMoviesTitle = async (titleMovie) => {
         type: film.Type,
         year: film.Year,
       }));
-    }else{
-        response.hasError = Error
+    } else if(Error != 'Movie not found!'){
+        response.hasError = Error;
     }
-
   } catch (error) {
-    response.hasError = error
+      response.hasError = error;
   }
 
   return {
-    ...response
+    ...response,
   };
 };

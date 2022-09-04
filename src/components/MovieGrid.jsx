@@ -7,8 +7,7 @@ import {ErrorApi, CardMovie, ErrorSearch, IsLoading} from '../components'
 export const MovieGrid = ({ titleMovie }) => {
   
   const { films, isLoading, hasError } = useFetchMovies(titleMovie);
-
-  if (hasError) return <ErrorApi hasError={hasError} />;
+  if (hasError != false) return <ErrorApi hasError={hasError} />;
 
   return (
     <>
