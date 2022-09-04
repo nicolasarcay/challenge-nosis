@@ -1,4 +1,5 @@
 export * from './AddMovieTitle';
+export * from './ButtonBack';
 export * from './CardMovie';
 export * from './ErrorApi';
 export * from './ErrorSearch';

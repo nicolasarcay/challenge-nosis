@@ -8,8 +8,6 @@ export const Movie = () => {
 
     const {film} = useFetchMovie( id )
 
-    console.log(film)
-
   return (
     <>
         <MovieDetails key={id} {...film} />
