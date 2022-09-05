@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import img404 from "../assets/img/404.png";
+import img404 from "../../public/assets/img/404.png";
 import { ButtonBack } from "../components";
 
 export const NotFound = () => {
