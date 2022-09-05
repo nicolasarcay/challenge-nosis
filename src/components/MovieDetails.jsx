@@ -54,45 +54,6 @@ export const MovieDetails = ({
                         <p className="boxOffice__button">{BoxOffice}</p>
                       </div>
                     </Col>
-                    <Col
-                      lg={6}
-                      md={12}
-                      className="pb-4 py-lg-2"
-                    >
-                      <div className="d-flex align-items-center p-3 justify-content-lg-end">
-                        <p>Comparti esta pelicula:</p>
-                        <ul className="list-unstyled d-flex m-0 ps-2">
-                          <li className="me-4">
-                            <a
-                              href={`https://www.facebook.com/sharer.php?u=${URLactual}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <img
-                                src={facebook}
-                                alt="icon facebook"
-                                width="30"
-                                height="30"
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href={`whatsapp://send?text=¿Vemos%20esta%20Peli%20hoy%20a%20la%20noche?%20${URLactual}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <img
-                                src={whatsapp}
-                                alt="icon whatsapp"
-                                width="30"
-                                height="30"
-                              />
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </Col>
                   </Row>
                 </Col>
               </Row>

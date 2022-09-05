@@ -5,10 +5,10 @@ La App fue realizada con Vite React 18, React Bootstrap, Sass y HTML.
 
 ## Caracteristicas
 
-- Aplicacion realizada con Vite.
-- Manejo de errores en API y de busqueda
+- Aplicación realizada con React + Vite.
+- Manejo de errores en API y de búsqueda
 - Git, GitHub y Github Pages
-- Implementacion de React Bootstrap con Sass
+- Implementación de React Bootstrap con Sass
 
 ## Tecnologias
 
@@ -39,18 +39,16 @@ Primer paso
 yarn dev
 ```
 
-Para inciar la compilacion de produccion:
+Para inciar la compilación de producción:
 
 ```sh
 yarn build
 ```
-Para ver la compilacion de produccion en vivo:
+Para ver la compilación de producción en vivo:
 ```sh
 yarn preview
 ```
 
-## License
+## Licencia
 
 MIT
-
-**Free Software, Hell Yeah!**
