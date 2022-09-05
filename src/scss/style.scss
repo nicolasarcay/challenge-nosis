@@ -27,7 +27,9 @@ p{
 
 .card__movie {
   display: flex;
-  @media (min-width: 768px) {
+  justify-content: center;
+  margin-bottom: 30px;
+  @media (min-width: 992px) {
     flex: 0 0 auto;
     width: 19%;
     border: none;
@@ -35,7 +37,7 @@ p{
   }
   &-img {
     border-radius: 5px;
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       max-height: 178px;
       min-height: 178px;
       min-width: 120px;
@@ -58,6 +60,9 @@ p{
     &:hover{
       color: $primary;
     }
+  }
+  h2{
+    padding: 15px 0;
   }
 }
 .add__movie-button {

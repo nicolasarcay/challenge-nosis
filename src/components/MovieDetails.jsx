@@ -29,12 +29,12 @@ export const MovieDetails = ({
         </Container>
       ) : (
         <Container className="pt-5">
-          <Row className=" justify-content-between align-items-start">
+          <Row className=" justify-content-between align-items-start mx-2 mx-md-0">
             <Col md={4} className="bg-dark p-3">
               <img src={poster} alt={Title} className="w-100" />
             </Col>
             <Col>
-              <Row className="bg-dark ms-2">
+              <Row className="bg-dark ms-md-2">
                 <Col xs={12} className="mx-0 border-bottom border-light">
                   <div className="p-3 pb-1">
                     <h1>
@@ -46,47 +46,57 @@ export const MovieDetails = ({
                     </div>
                   </div>
                 </Col>
-                <Col xs={12} className="mx-0 d-flex justify-content-between ">
-                  <div className="d-flex align-items-center ps-3 py-4">
-                    <p className="pe-3">Costo:</p>
-                    <p className="boxOffice__button">{BoxOffice}</p>
-                  </div>
-                  <div className="d-flex align-items-center pe-3 py-4">
-                    <p>Comparti esta pelicula:</p>
-                    <ul className="list-unstyled d-flex m-0 ps-2">
-                      <li className="me-4">
-                        <a
-                          href={`https://www.facebook.com/sharer.php?u=${URLactual}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src={facebook}
-                            alt="icon facebook"
-                            width="30"
-                            height="30"
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href={`whatsapp://send?text=¿Vemos%20esta%20Peli%20hoy%20a%20la%20noche?%20${URLactual}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src={whatsapp}
-                            alt="icon whatsapp"
-                            width="30"
-                            height="30"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <Col xs={12} className="mx-0">
+                  <Row className="justify-content-between">
+                    <Col lg={6} md={12} className="py-2">
+                      <div className="p-3 d-flex align-items-center">
+                        <p className="pe-3">Costo:</p>
+                        <p className="boxOffice__button">{BoxOffice}</p>
+                      </div>
+                    </Col>
+                    <Col
+                      lg={6}
+                      md={12}
+                      className="pb-4 py-lg-2"
+                    >
+                      <div className="d-flex align-items-center p-3 justify-content-end">
+                        <p>Comparti esta pelicula:</p>
+                        <ul className="list-unstyled d-flex m-0 ps-2">
+                          <li className="me-4">
+                            <a
+                              href={`https://www.facebook.com/sharer.php?u=${URLactual}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <img
+                                src={facebook}
+                                alt="icon facebook"
+                                width="30"
+                                height="30"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href={`whatsapp://send?text=¿Vemos%20esta%20Peli%20hoy%20a%20la%20noche?%20${URLactual}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <img
+                                src={whatsapp}
+                                alt="icon whatsapp"
+                                width="30"
+                                height="30"
+                              />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </Col>
+                  </Row>
                 </Col>
               </Row>
-              <Row className="bg-dark ms-2 mt-3 mb-5">
+              <Row className="bg-dark ms-md-2 mt-3 mb-5">
                 <Col xs={12} className="mx-0">
                   <dl className="p-3 pb-0">
                     <dt className="h5 pt-2 border-bottom border-light pb-1">

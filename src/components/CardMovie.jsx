@@ -8,7 +8,8 @@ export const CardMovie = ({ title, url, type, year, id }) => {
   return (
     <>
       <Col
-        md={2}
+        xl={2}
+        md={6}
         xs={12}
         className="card__movie"
       >
