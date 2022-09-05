@@ -59,7 +59,7 @@ export const MovieDetails = ({
                       md={12}
                       className="pb-4 py-lg-2"
                     >
-                      <div className="d-flex align-items-center p-3 justify-content-end">
+                      <div className="d-flex align-items-center p-3 justify-content-lg-end">
                         <p>Comparti esta pelicula:</p>
                         <ul className="list-unstyled d-flex m-0 ps-2">
                           <li className="me-4">
