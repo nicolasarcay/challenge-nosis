@@ -1,8 +1,8 @@
 import { Col, Container, Row, Badge } from "react-bootstrap";
 import { ButtonBack } from "./ButtonBack";
-import facebook from "../../public/assets/img/facebook.svg";
-import whatsapp from "../../public/assets/img/whatsapp.svg";
-import { IsLoading } from "./IsLoading";
+import facebook from "../assets/img/facebook.svg";
+import whatsapp from "../assets/img/whatsapp.svg";
+import { IsLoading } from "../components";
 
 export const MovieDetails = ({
   Title,

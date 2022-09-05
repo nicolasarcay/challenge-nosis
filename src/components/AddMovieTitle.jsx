@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
-import iconSearch from "../../public/assets/img/search.svg";
+import iconSearch from "../assets/img/search.svg";
 
 export const AddMovieTitle = ({ onNewMovieTitle }) => {
 
