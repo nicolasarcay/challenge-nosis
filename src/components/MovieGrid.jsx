@@ -11,7 +11,7 @@ export const MovieGrid = ({ titleMovie }) => {
 
   return (
     <>
-      {films.length == 0 && !isLoading ? (
+      {films.length === 0 && !isLoading ? (
         <ErrorSearch />
       ) : (
         <Row className="justify-content-center py-4">

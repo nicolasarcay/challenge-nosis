@@ -7,7 +7,7 @@ export const getMovie = async (id) => {
 
     movie = await resp.json();
 
-    if (movie.Response == "False") {
+    if (!movie.Response) {
       movie.hasError = movie.Error;
     }
   } catch (error) {

@@ -2,7 +2,6 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export const ErrorSearch = () => {
   return (
-    <>
       <Container>
         <Row>
           <Col>
@@ -13,6 +12,5 @@ export const ErrorSearch = () => {
           </Col>
         </Row>
       </Container>
-    </>
   );
 };

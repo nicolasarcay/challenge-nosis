@@ -1,7 +1,5 @@
 import { Col, Container, Row, Badge } from "react-bootstrap";
 import { ButtonBack } from "./ButtonBack";
-import facebook from "../assets/img/facebook.svg";
-import whatsapp from "../assets/img/whatsapp.svg";
 import { IsLoading } from "../components";
 
 export const MovieDetails = ({
@@ -18,7 +16,7 @@ export const MovieDetails = ({
 }) => {
   const URLactual = window.location.href;
   let poster = "";
-  if (Poster != undefined) {
+  if ( !Poster ) {
     poster = Poster.replaceAll("N/A", "https://via.placeholder.com/300x444");
   }
   return (
