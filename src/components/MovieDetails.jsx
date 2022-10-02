@@ -14,9 +14,8 @@ export const MovieDetails = ({
   Poster,
   BoxOffice,
 }) => {
-  const URLactual = window.location.href;
   let poster = "";
-  if ( !Poster ) {
+  if (Poster) {
     poster = Poster.replaceAll("N/A", "https://via.placeholder.com/300x444");
   }
   return (
